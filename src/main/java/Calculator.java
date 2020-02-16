@@ -1,3 +1,4 @@
+import java.util.UUID;
 
 class Calculator
 {
@@ -74,8 +75,13 @@ class Calculator
 	 */
 	String createUniqueID(String n)
 	{
+		StringBuilder uniqueID = new StringBuilder();
+		uniqueID.append(n);
 
-		return null;
+		UUID uuid = UUID.randomUUID();
+		uniqueID.append(uuid.toString());
+
+		return uniqueID.toString();
 	}
 
 
