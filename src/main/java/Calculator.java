@@ -28,7 +28,6 @@ class Calculator
 		return a / b;
 	}
 
-
 	/*
 	Returns the n'th number in the fibonacci sequence
 	https://en.wikipedia.org/wiki/Fibonacci_number
@@ -49,9 +48,8 @@ class Calculator
 	{
 		if (n <= 1)
 			return n;
-		return fibonacciNumberFinder(n-1) + fibonacciNumberFinder(n-2);
+		return fibonacciNumberFinder(n - 1) + fibonacciNumberFinder(n - 2);
 	}
-
 
 	/*
 	Returns binary value of the given int number
@@ -83,6 +81,5 @@ class Calculator
 
 		return uniqueID.toString();
 	}
-
 
 }
